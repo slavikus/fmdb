@@ -10,6 +10,7 @@
 
 @class FMDatabase;
 
+NS_ASSUME_NONNULL_BEGIN
 /** Pool of `<FMDatabase>` objects.
 
  ### See also
@@ -70,7 +71,7 @@
  @return The `FMDatabasePool` object. `nil` on error.
  */
 
-+ (instancetype)databasePoolWithPath:(NSString*)aPath;
++ (nullable instancetype)databasePoolWithPath:(NSString*)aPath;
 
 /** Create pool using path and specified flags
 
@@ -80,7 +81,7 @@
  @return The `FMDatabasePool` object. `nil` on error.
  */
 
-+ (instancetype)databasePoolWithPath:(NSString*)aPath flags:(int)openFlags;
++ (nullable instancetype)databasePoolWithPath:(NSString*)aPath flags:(int)openFlags;
 
 /** Create pool using path.
 
@@ -89,7 +90,7 @@
  @return The `FMDatabasePool` object. `nil` on error.
  */
 
-- (instancetype)initWithPath:(NSString*)aPath;
+- (nullable instancetype)initWithPath:(NSString*)aPath;
 
 /** Create pool using path and specified flags.
 
@@ -99,7 +100,7 @@
  @return The `FMDatabasePool` object. `nil` on error.
  */
 
-- (instancetype)initWithPath:(NSString*)aPath flags:(int)openFlags;
+- (nullable instancetype)initWithPath:(NSString*)aPath flags:(int)openFlags;
 
 ///------------------------------------------------
 /// @name Keeping track of checked in/out databases
@@ -164,7 +165,7 @@
  @warning You can not nest these, since calling it will pull another database out of the pool and you'll get a deadlock. If you need to nest, use `<[FMDatabase startSavePointWithName:error:]>` instead.
 */
 
-- (NSError*)inSavePoint:(void (^)(FMDatabase *db, BOOL *rollback))block;
+- (nullable NSError*)inSavePoint:(void (^)(FMDatabase *db, BOOL *rollback))block;
 
 @end
 
@@ -198,3 +199,4 @@
 
 @end
 
+NS_ASSUME_NONNULL_END

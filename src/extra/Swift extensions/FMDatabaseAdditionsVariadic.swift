@@ -18,7 +18,7 @@ extension FMDatabase {
     private func valueForQuery<T>(sql: String, values: [AnyObject]?, completionHandler:(FMResultSet)->(T!)) -> T! {
         var result: T!
         
-        if let rs = executeQuery(sql, withArgumentsInArray: values) {
+        if let rs = executeQuery(sql, withArgumentsInArray: values!) {
             if rs.next() {
                 let obj: AnyObject! = rs.objectForColumnIndex(0)
                 if !(obj is NSNull) {

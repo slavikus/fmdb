@@ -68,7 +68,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-interface-ivars"
-
+NS_ASSUME_NONNULL_BEGIN
 
 @interface FMDatabase : NSObject  {
     
@@ -144,7 +144,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
 
  */
 
-+ (instancetype)databaseWithPath:(NSString*)inPath;
++ (nullable instancetype)databaseWithPath:(NSString*)inPath;
 
 /** Initialize a `FMDatabase` object.
  
@@ -172,7 +172,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
 
  */
 
-- (instancetype)initWithPath:(NSString*)inPath;
+- (nullable instancetype)initWithPath:(NSString*)inPath;
 
 
 ///-----------------------------------
@@ -478,7 +478,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  @note If you want to use this from Swift, please note that you must include `FMDatabaseVariadic.swift` in your project. Without that, you cannot use this method directly, and instead have to use methods such as `<executeQuery:withArgumentsInArray:>`.
  */
 
-- (FMResultSet *)executeQuery:(NSString*)sql, ...;
+- (nullable FMResultSet *)executeQuery:(NSString*)sql, ...;
 
 /** Execute select statement
 
@@ -508,7 +508,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  
  */
 
-- (FMResultSet *)executeQueryWithFormat:(NSString*)format, ... NS_FORMAT_FUNCTION(1,2);
+- (nullable FMResultSet *)executeQueryWithFormat:(NSString*)format, ... NS_FORMAT_FUNCTION(1,2);
 
 /** Execute select statement
 
@@ -526,7 +526,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  @see [`FMResultSet next`](<[FMResultSet next]>)
  */
 
-- (FMResultSet *)executeQuery:(NSString *)sql withArgumentsInArray:(NSArray *)arguments;
+- (nullable FMResultSet *)executeQuery:(NSString *)sql withArgumentsInArray:(NSArray *)arguments;
 
 /** Execute select statement
 
@@ -544,11 +544,11 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  @see [`FMResultSet next`](<[FMResultSet next]>)
  */
 
-- (FMResultSet *)executeQuery:(NSString *)sql withParameterDictionary:(NSDictionary *)arguments;
+- (nullable FMResultSet *)executeQuery:(NSString *)sql withParameterDictionary:(NSDictionary *)arguments;
 
 
 // Documentation forthcoming.
-- (FMResultSet *)executeQuery:(NSString*)sql withVAList: (va_list)args;
+- (nullable FMResultSet *)executeQuery:(NSString*)sql withVAList: (va_list)args;
 
 ///-------------------
 /// @name Transactions
@@ -720,7 +720,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  
  */
 
-- (NSString *)databasePath;
+- (nullable NSString *)databasePath;
 
 /** The underlying SQLite handle 
  
@@ -747,7 +747,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  
  */
 
-- (NSString*)lastErrorMessage;
+- (nullable NSString*)lastErrorMessage;
 
 /** Last error code
  
@@ -784,7 +784,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  
  */
 
-- (NSError*)lastError;
+- (nullable NSError*)lastError;
 
 
 // description forthcoming
@@ -851,7 +851,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  
  */
 
-- (NSError*)inSavePoint:(void (^)(BOOL *rollback))block;
+- (nullable NSError*)inSavePoint:(void (^)(BOOL *rollback))block;
 
 
 ///----------------------------
@@ -1002,7 +1002,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  @see storeableDateFormat:
  */
 
-- (NSDate *)dateFromString:(NSString *)s;
+- (nullable NSDate *)dateFromString:(NSString *)s;
 
 /** Convert the supplied NSDate to NSString, using the current database formatter.
  
@@ -1017,7 +1017,7 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
  @see storeableDateFormat:
  */
 
-- (NSString *)stringFromDate:(NSDate *)date;
+- (nullable NSString *)stringFromDate:(NSDate *)date;
 
 @end
 
@@ -1076,5 +1076,6 @@ typedef int(^FMDBExecuteStatementsCallbackBlock)(NSDictionary *resultsDictionary
 
 @end
 
+NS_ASSUME_NONNULL_END
 #pragma clang diagnostic pop
 

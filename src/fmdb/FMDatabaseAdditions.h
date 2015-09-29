@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FMDatabase.h"
 
-
+NS_ASSUME_NONNULL_BEGIN
 /** Category of additions for `<FMDatabase>` class.
  
  ### See also
@@ -141,7 +141,7 @@
  @see [SQLite File Format](http://www.sqlite.org/fileformat.html)
  */
 
-- (FMResultSet*)getSchema;
+- (nullable FMResultSet*)getSchema;
 
 /** The schema of the database.
 
@@ -165,7 +165,7 @@
  @see [table_info](http://www.sqlite.org/pragma.html#pragma_table_info)
  */
 
-- (FMResultSet*)getTableSchema:(NSString*)tableName;
+- (nullable FMResultSet*)getTableSchema:(NSString*)tableName;
 
 /** Test to see if particular column exists for particular table in database
  
@@ -275,3 +275,4 @@
 - (void)setUserVersion:(uint32_t)version;
 
 @end
+NS_ASSUME_NONNULL_END

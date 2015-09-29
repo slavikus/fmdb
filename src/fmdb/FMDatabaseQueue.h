@@ -10,6 +10,8 @@
 
 @class FMDatabase;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /** To perform queries and updates on multiple threads, you'll want to use `FMDatabaseQueue`.
 
  Using a single instance of `<FMDatabase>` from multiple threads at once is a bad idea.  It has always been OK to make a `<FMDatabase>` object *per thread*.  Just don't share a single instance across threads, and definitely not across multiple threads at the same time.
@@ -86,7 +88,7 @@
  @return The `FMDatabaseQueue` object. `nil` on error.
  */
 
-+ (instancetype)databaseQueueWithPath:(NSString*)aPath;
++ (nullable instancetype)databaseQueueWithPath:(nullable NSString*)aPath;
 
 /** Create queue using path and specified flags.
  
@@ -95,7 +97,7 @@
  
  @return The `FMDatabaseQueue` object. `nil` on error.
  */
-+ (instancetype)databaseQueueWithPath:(NSString*)aPath flags:(int)openFlags;
++ (nullable instancetype)databaseQueueWithPath:(nullable NSString*)aPath flags:(int)openFlags;
 
 /** Create queue using path.
 
@@ -104,7 +106,7 @@
  @return The `FMDatabaseQueue` object. `nil` on error.
  */
 
-- (instancetype)initWithPath:(NSString*)aPath;
+- (nullable instancetype)initWithPath:(nullable NSString*)aPath;
 
 /** Create queue using path and specified flags.
  
@@ -114,7 +116,7 @@
  @return The `FMDatabaseQueue` object. `nil` on error.
  */
 
-- (instancetype)initWithPath:(NSString*)aPath flags:(int)openFlags;
+- (nullable instancetype)initWithPath:(nullable NSString*)aPath flags:(int)openFlags;
 
 /** Create queue using path and specified flags.
  
@@ -125,7 +127,7 @@
  @return The `FMDatabaseQueue` object. `nil` on error.
  */
 
-- (instancetype)initWithPath:(NSString*)aPath flags:(int)openFlags vfs:(NSString *)vfsName;
+- (nullable instancetype)initWithPath:(nullable NSString*)aPath flags:(int)openFlags vfs:(nullable NSString *)vfsName;
 
 /** Returns the Class of 'FMDatabase' subclass, that will be used to instantiate database object.
  
@@ -176,7 +178,8 @@
 
 // NOTE: you can not nest these, since calling it will pull another database out of the pool and you'll get a deadlock.
 // If you need to nest, use FMDatabase's startSavePointWithName:error: instead.
-- (NSError*)inSavePoint:(void (^)(FMDatabase *db, BOOL *rollback))block;
+- (nullable NSError*)inSavePoint:(void (^)(FMDatabase *db, BOOL *rollback))block;
 
 @end
 
+NS_ASSUME_NONNULL_END
