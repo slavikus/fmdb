@@ -8,31 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		091C24D61B94B431002E4E8F /* FMDB-FW-IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 091C24D51B94B431002E4E8F /* FMDB-FW-IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C24DD1B94B431002E4E8F /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C24D31B94B431002E4E8F /* FMDB.framework */; settings = {ASSET_TAGS = (); }; };
+		091C24DD1B94B431002E4E8F /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C24D31B94B431002E4E8F /* FMDB.framework */; };
 		091C24E21B94B431002E4E8F /* FMDB_FW_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 091C24E11B94B431002E4E8F /* FMDB_FW_IOSTests.m */; };
 		091C24F81B94B490002E4E8F /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC24EBA0A13E34D00A6D3E3 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C24F91B94B490002E4E8F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; settings = {ASSET_TAGS = (); }; };
-		091C24FA1B94B490002E4E8F /* FMDatabase+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D9D8CE1B6E7DC50083E17F /* FMDatabase+Private.h */; settings = {ASSET_TAGS = (); }; };
+		091C24F91B94B490002E4E8F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; };
+		091C24FA1B94B490002E4E8F /* FMDatabase+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D9D8CE1B6E7DC50083E17F /* FMDatabase+Private.h */; };
 		091C24FB1B94B490002E4E8F /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC24EBF0A13E34D00A6D3E3 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C24FC1B94B490002E4E8F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */; settings = {ASSET_TAGS = (); }; };
+		091C24FC1B94B490002E4E8F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */; };
 		091C24FD1B94B490002E4E8F /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CC47A00D148581E9002CCDAB /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C24FE1B94B490002E4E8F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC47A00E148581E9002CCDAB /* FMDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
+		091C24FE1B94B490002E4E8F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC47A00E148581E9002CCDAB /* FMDatabaseQueue.m */; };
 		091C24FF1B94B490002E4E8F /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CC50F2CC0DF9183600E4AAAE /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C25001B94B490002E4E8F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC50F2CB0DF9183600E4AAAE /* FMDatabaseAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		091C25001B94B490002E4E8F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC50F2CB0DF9183600E4AAAE /* FMDatabaseAdditions.m */; };
 		091C25011B94B490002E4E8F /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E4EB713B31188005F9210 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C25021B94B490002E4E8F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9E4EB813B31188005F9210 /* FMDatabasePool.m */; settings = {ASSET_TAGS = (); }; };
-		091C25031B94B49E002E4E8F /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F502419EC4C6B0087DCBF /* FMDatabaseVariadic.swift */; settings = {ASSET_TAGS = (); }; };
-		091C25041B94B4A2002E4E8F /* FMDatabaseAdditionsVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352D5AC1A73DCEA003A8E09 /* FMDatabaseAdditionsVariadic.swift */; settings = {ASSET_TAGS = (); }; };
+		091C25021B94B490002E4E8F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9E4EB813B31188005F9210 /* FMDatabasePool.m */; };
+		091C25031B94B49E002E4E8F /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F502419EC4C6B0087DCBF /* FMDatabaseVariadic.swift */; };
+		091C25041B94B4A2002E4E8F /* FMDatabaseAdditionsVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352D5AC1A73DCEA003A8E09 /* FMDatabaseAdditionsVariadic.swift */; };
 		091C25051B94B4AA002E4E8F /* FMDatabase+InMemoryOnDiskIO.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7CE42618F5C04600938264 /* FMDatabase+InMemoryOnDiskIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C25061B94B4AA002E4E8F /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7CE42718F5C04600938264 /* FMDatabase+InMemoryOnDiskIO.m */; settings = {ASSET_TAGS = (); }; };
+		091C25061B94B4AA002E4E8F /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7CE42718F5C04600938264 /* FMDatabase+InMemoryOnDiskIO.m */; };
 		091C25071B94B4C9002E4E8F /* FMDatabase+FTS3.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA66A2819C0CB1900EFDAC1 /* FMDatabase+FTS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C25081B94B4C9002E4E8F /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA66A2919C0CB1900EFDAC1 /* FMDatabase+FTS3.m */; settings = {ASSET_TAGS = (); }; };
+		091C25081B94B4C9002E4E8F /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA66A2919C0CB1900EFDAC1 /* FMDatabase+FTS3.m */; };
 		091C25091B94B4C9002E4E8F /* FMTokenizers.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA66A2A19C0CB1900EFDAC1 /* FMTokenizers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C250A1B94B4C9002E4E8F /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA66A2B19C0CB1900EFDAC1 /* FMTokenizers.m */; settings = {ASSET_TAGS = (); }; };
+		091C250A1B94B4C9002E4E8F /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA66A2B19C0CB1900EFDAC1 /* FMTokenizers.m */; };
 		091C250C1B94B66D002E4E8F /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 091C250B1B94B66D002E4E8F /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		091C250E1B94B760002E4E8F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C250D1B94B760002E4E8F /* libsqlite3.tbd */; };
 		091C25171B94B79B002E4E8F /* FMDB-FW-MAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 091C25161B94B79B002E4E8F /* FMDB-FW-MAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C251E1B94B79B002E4E8F /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C25141B94B79B002E4E8F /* FMDB.framework */; settings = {ASSET_TAGS = (); }; };
+		091C251E1B94B79B002E4E8F /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C25141B94B79B002E4E8F /* FMDB.framework */; };
 		091C25231B94B79B002E4E8F /* FMDB_FW_MACTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 091C25221B94B79B002E4E8F /* FMDB_FW_MACTests.m */; };
 		091C252C1B94B7C1002E4E8F /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 091C252B1B94B7C1002E4E8F /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		091C252D1B94B7EC002E4E8F /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC24EBA0A13E34D00A6D3E3 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,16 +43,16 @@
 		091C25321B94B7EC002E4E8F /* FMDatabase+InMemoryOnDiskIO.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7CE42618F5C04600938264 /* FMDatabase+InMemoryOnDiskIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		091C25331B94B7EC002E4E8F /* FMDatabase+FTS3.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA66A2819C0CB1900EFDAC1 /* FMDatabase+FTS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		091C25341B94B7EC002E4E8F /* FMTokenizers.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA66A2A19C0CB1900EFDAC1 /* FMTokenizers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091C25351B94B7F9002E4E8F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; settings = {ASSET_TAGS = (); }; };
-		091C25361B94B7F9002E4E8F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */; settings = {ASSET_TAGS = (); }; };
-		091C25371B94B7F9002E4E8F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC47A00E148581E9002CCDAB /* FMDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
-		091C25381B94B7F9002E4E8F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC50F2CB0DF9183600E4AAAE /* FMDatabaseAdditions.m */; settings = {ASSET_TAGS = (); }; };
-		091C25391B94B7F9002E4E8F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9E4EB813B31188005F9210 /* FMDatabasePool.m */; settings = {ASSET_TAGS = (); }; };
-		091C253A1B94B7F9002E4E8F /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F502419EC4C6B0087DCBF /* FMDatabaseVariadic.swift */; settings = {ASSET_TAGS = (); }; };
-		091C253B1B94B7F9002E4E8F /* FMDatabaseAdditionsVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352D5AC1A73DCEA003A8E09 /* FMDatabaseAdditionsVariadic.swift */; settings = {ASSET_TAGS = (); }; };
-		091C253C1B94B7F9002E4E8F /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7CE42718F5C04600938264 /* FMDatabase+InMemoryOnDiskIO.m */; settings = {ASSET_TAGS = (); }; };
-		091C253D1B94B7F9002E4E8F /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA66A2919C0CB1900EFDAC1 /* FMDatabase+FTS3.m */; settings = {ASSET_TAGS = (); }; };
-		091C253E1B94B7F9002E4E8F /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA66A2B19C0CB1900EFDAC1 /* FMTokenizers.m */; settings = {ASSET_TAGS = (); }; };
+		091C25351B94B7F9002E4E8F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; };
+		091C25361B94B7F9002E4E8F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */; };
+		091C25371B94B7F9002E4E8F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC47A00E148581E9002CCDAB /* FMDatabaseQueue.m */; };
+		091C25381B94B7F9002E4E8F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC50F2CB0DF9183600E4AAAE /* FMDatabaseAdditions.m */; };
+		091C25391B94B7F9002E4E8F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9E4EB813B31188005F9210 /* FMDatabasePool.m */; };
+		091C253A1B94B7F9002E4E8F /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F502419EC4C6B0087DCBF /* FMDatabaseVariadic.swift */; };
+		091C253B1B94B7F9002E4E8F /* FMDatabaseAdditionsVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352D5AC1A73DCEA003A8E09 /* FMDatabaseAdditionsVariadic.swift */; };
+		091C253C1B94B7F9002E4E8F /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7CE42718F5C04600938264 /* FMDatabase+InMemoryOnDiskIO.m */; };
+		091C253D1B94B7F9002E4E8F /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA66A2919C0CB1900EFDAC1 /* FMDatabase+FTS3.m */; };
+		091C253E1B94B7F9002E4E8F /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA66A2B19C0CB1900EFDAC1 /* FMTokenizers.m */; };
 		091C25401B94B851002E4E8F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C253F1B94B851002E4E8F /* libsqlite3.tbd */; };
 		3354379C19E71096005661F3 /* FMResultSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3354379B19E71096005661F3 /* FMResultSetTests.m */; };
 		621721B21892BFE30006691F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; };
@@ -718,6 +718,7 @@
 					};
 					091C25131B94B79B002E4E8F = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					091C251C1B94B79B002E4E8F = {
 						CreatedOnToolsVersion = 7.0;
@@ -1121,6 +1122,7 @@
 				PRODUCT_NAME = FMDB;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1160,6 +1162,7 @@
 				PRODUCT_NAME = FMDB;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
